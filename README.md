@@ -44,7 +44,7 @@ For Software:
  No installation needed. Just open index.html in any modern browser.
 
 # Run
- git clone https://github.com/your-username/objecttalk.git
+ https://github.com/NahanaFathima/useless-project
  cd objecttalk
  open index.html
 
