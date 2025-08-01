@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Object Talk | Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>💬 Chat</h1>
+    <nav>
+      <a href="index.html">🏠 Feed</a>
+      <a href="post.html">➕ Post</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="login.html">🔐 Login</a>
+    </nav>
+  </header>
+
+  <main class="chat-container">
+    <div class="chat-box">
+      <div class="message incoming">📦 Boxy: Hey Fanzy!</div>
+      <div class="message outgoing">🌬️ Fanzy: What's in the box today?</div>
+    </div>
+    <form id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type your message..." aria-label="Chat input" />
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <script>
+    const chatForm = document.getElementById("chatForm");
+    const chatBox = document.querySelector(".chat-box");
+
+    chatForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const input = document.getElementById("chatInput");
+      const msg = input.value.trim();
+      if (msg) {
+        const bubble = document.createElement("div");
+        bubble.className = "message outgoing";
+        bubble.textContent = `🌬️ Fanzy: ${msg}`;
+        chatBox.appendChild(bubble);
+        input.value = "";
+      }
+    });
+  </script>
+</body>
+</html>
