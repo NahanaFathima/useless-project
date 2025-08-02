@@ -47,7 +47,7 @@ For Software:
  https://github.com/NahanaFathima/useless-project
  cd objecttalk
  open index.html
- http://127.0.0.1:5500/index.html
+ http://127.0.0.1:5500/
 
 ### Project Documentation
 For Software:
